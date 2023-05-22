@@ -34,7 +34,6 @@ const reset = () =>{
    botonCopiar.style.display = "none";
    mensajeTexto.classList.remove("ajustar");
    primeroParrafoResultado.classList.remove("ajustar");
-   ingresarTexto.focus();
 }
 
 botonEncriptar.addEventListener("click", () =>{
@@ -88,6 +87,7 @@ botonCopiar.addEventListener("click", () =>{
    texto.select();
    document.execCommand('copy');
    reset();
+   ingresarTexto.focus();
    Swal.fire({
     position: 'center',
     icon: 'success',
