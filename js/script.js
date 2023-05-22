@@ -50,12 +50,12 @@ botonEncriptar.addEventListener("click", () =>{
         }
         remplace(encriptar(texto));
     }else{
+        reset();
         Swal.fire({
             icon: 'error',
             title: 'Error...',
             text: 'Debes ingresar un texto para encriptar!',
-        })
-        reset();
+        }) 
     }
 })
 
@@ -72,12 +72,12 @@ botonDesencriptar.addEventListener("click", () =>{
         }
         remplace(desencriptar(texto));
     }else{
+        reset();
         Swal.fire({
             icon: 'error',
             title: 'Error...',
             text: 'Debes ingresar un texto para desencriptar!',
         })
-        reset();
     }
 })
 
